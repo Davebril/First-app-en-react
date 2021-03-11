@@ -64,3 +64,25 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+
+.Carrito {
+
+  width: 30px;
+  height: 30px;
+  margin-left: 100px;
+  position: relative;
+  display: flex;
+  margin-top: 400px;
+  
+}
+
+.Cart {
+  width: 120px;
+  height: 30px;
+  margin-left: 1190px;
+  margin-top: -38px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  cursor: pointer;
+}
