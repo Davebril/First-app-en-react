@@ -1,9 +1,10 @@
-const ItemListContainer = ({greeting}) => {
+import ItemList from "./ItemList/ItemList";
+
+const ItemListContainer = ({ items }) => {
     return (
         <p>
-        ¡Bienvenido {greeting.name}! :)
+        <ItemList items={ items }/>
         </p>
     );
-}
-
+};
 export default ItemListContainer;

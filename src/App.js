@@ -1,16 +1,25 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import CartWidget from './components/CartWidget';
-import AppFunction from './components/AppFunction';
 import ItemListContainer from './components/ItemListContainer';
 import CounterApp from './components/CounterApp';
+import { useEffect, useState } from "react";
 
 function App() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    new Promise((todoBien, todoMal) => {
+      setTimeout(() => {
+        todoBien ([{fruta:'Manzana, '}, {fruta: ' Pera, '}, {fruta:' Naranja'}]);
+      }, 2000);
+    }).then((resultado) => setItems(resultado));
+  });
+
   return <>
          <NavBar/>
         <CartWidget/>
-        <AppFunction/>
-        <ItemListContainer greeting={{ name: 'querido usuario!' }} />
+        <ItemListContainer items={items} />
         <CounterApp/>
         </>
 }

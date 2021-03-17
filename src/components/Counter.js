@@ -18,8 +18,8 @@ import React, {useState} from 'react';
 
     return (
         <div>
-            <button onClick={ handleApp }> + 1 </button>  
-            <button onClick={ handleSubtract }> -1 </button>
+            <button onClick={ handleApp }>+1</button>  
+            <button onClick={ handleSubtract }>-1</button>
             <form onSubmit={ e => onAdd(e, counter) }>    
                  <input  value= {counter}/>  
                  <button type='submit'> Add </button>
