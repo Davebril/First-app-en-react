@@ -19,7 +19,11 @@ function App() {
   return <>
          <NavBar/>
         <CartWidget/>
+<<<<<<< HEAD
         <ItemListContainer items={items} />
+=======
+        <ItemListContainer greeting={{ name: 'querido usuario!' }} />
+>>>>>>> 368d57f9e2df2510c2afcac45073f434500c7a17
         <CounterApp/>
         </>
 }
