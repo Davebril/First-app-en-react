@@ -1,2 +1,5 @@
-const Item = ({ fruta }) => <li>{fruta}</li>;
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+
+const Item = (props) => <ItemDetailContainer/>;
+
 export default Item;

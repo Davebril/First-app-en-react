@@ -65,6 +65,15 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+.Titulo {
+  display: flex;
+  color: white;
+  margin-top: 14px;
+  position: absolute;
+  margin-left: 580px;
+  font: caption;
+}
+
 .Carrito {
 
   width: 30px;
@@ -94,4 +103,8 @@ li a:hover:not(.active) {
 .Contain {
   color: blue;
   background-color: aliceblue;
+}
+
+.ravioles {
+  width: 30%;
 }

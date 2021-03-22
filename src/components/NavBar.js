@@ -6,6 +6,10 @@ function NavBar() {
         <li><a href="#news">Compras</a></li>
         <li><a href="#contact">Contacto</a></li>
         <li><a href="#about">About</a></li>
+        <div className="Titulo">
+        Ph De Pastas
+        </div>
+        
       </ul>
     </div>
   );
