@@ -17,6 +17,7 @@ const RouterApp = () => {
                 <NavBar/>
 
                 <Switch>
+                    
                     <Route path="/item/:id">
                         <ItemDetailContainer/>
                     </Route>
@@ -27,10 +28,10 @@ const RouterApp = () => {
                         <ItemListContainer/>
                     </Route>
 
-              </Switch>
-                <Redirect to='/'/>
+                </Switch>
+                    <Redirect to='/'/>
             </div>
-         </Router>
+        </Router>
     );
 };
 

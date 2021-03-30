@@ -7,7 +7,6 @@ const ItemListContainer = (props) => {
     const [items, setItems] = useState([]);
     const {id} = useParams();
     
-
     useEffect(() => {
         new Promise((resolve, reject) => {
           setTimeout(() => {

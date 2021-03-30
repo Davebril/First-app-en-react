@@ -3,13 +3,11 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
 import {products} from '../products';
 
-
 const ItemDetailContainer = (props) => {
   const [item, setItem] = useState({});
   const {id} = useParams();
   const [ loading, setLoading ] = useState(true)
   
-
   useEffect(() => {
       new Promise((resolve, reject) => {
         setTimeout(() => {

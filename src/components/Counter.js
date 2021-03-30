@@ -17,13 +17,13 @@ import React, {useState} from 'react';
     }
 
     return (
-        <div>
-            <button onClick={ handleApp }>+1</button>  
-            <button onClick={ handleSubtract }>-1</button>
+        <div className="d-flex">         
+            <button className="btn btn-success mt-5"onClick={ handleApp }>+1</button>
             <form onSubmit={ e => onAdd(e, counter) }>    
-                 <input  value= {counter}/>  
-                 <button type='submit'> Add </button>
+                 <input className="input" value= {counter}/>  
+                 <button className="btn btn-primary mt-8" type='submit'> Add </button>      
             </form>    
+            <button className="btn btn-danger mt-5" onClick={ handleSubtract }>-1</button>
         </div>
 
     )
