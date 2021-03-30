@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
-import {products} from './products';
+import {products} from '../products';
 
-const {ItemDetailContainer} = (props) => {
+
+const ItemDetailContainer = (props) => {
   const [item, setItem] = useState({});
   const {id} = useParams();
   const [ loading, setLoading ] = useState(true)
