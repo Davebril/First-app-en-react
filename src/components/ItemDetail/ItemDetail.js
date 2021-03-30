@@ -1,15 +1,18 @@
 import ravioles from "../Item/ravioles.jpg";
+import canelones from "../Item/canelones.jpg";
+import sorrentinos from "../Item/sorrentinos.jpg";
 
 const ItemDetail = (props) => {
     return (
-        <div className="ravioles">
-            <img src={ravioles}/>
-            <p>Id: 1</p>
-            <p>Title: ravioles con salsa filetto</p>
-            <p>Description: Deliciosas pastas, 
-                ideales para acompañar con vino tinto</p>
-            <p>Price: 350$</p>  
+        <div className="pastas">
+            <img className="ravioles" src={ravioles}/>
+            <p>Id: { props.item.id }</p>
+            <p>Tipo: { props.item.Tipo }</p>
+            <p>Descripcion: { props.item.Descripcion }</p>
+            <p>Precio: { props.item.Precio }</p>                   
         </div>
+
+        
     );
 };
 

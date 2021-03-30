@@ -2,12 +2,12 @@ import Item from '../Item/Item';
 
 const ItemList = ({ items }) => (
     <>
-      <h1>Lista</h1>
-      <ul className="Contain">
+      
+      <div className="card-columns">
         {items.map((item, index) => (
           <Item key={index} {...item} />
         ))}
-      </ul>
+      </div>
     </>
   );
   export default ItemList;
