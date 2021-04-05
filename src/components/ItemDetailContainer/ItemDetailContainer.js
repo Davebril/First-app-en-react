@@ -3,32 +3,40 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
 import {products} from '../products';
 
-const ItemDetailContainer = (props) => {
-  const [item, setItem] = useState({});
+const ItemDetailContainer = () => {
+
+  const [detail, setDetail] = useState({});
   const {id} = useParams();
   const [ loading, setLoading ] = useState(true)
   
+
   useEffect(() => {
+
       new Promise((resolve, reject) => {
         setTimeout(() => {
          
-              resolve(products.find( p => p.Tipo === id));
-              setLoading(false)
-                 
+              resolve(products);            
         }, 2000);
-      }).then((resultado) => setItem(resultado));
-    }, [id]);
 
+      }).then(res => { 
+        setDetail(res.filter( p => p.tipo === parseInt(id) )[0]) ;
+        setLoading(false);
+    })
+
+    }, [id]);
     return (
       <>
           {
               loading ?
                   <p>Loading...</p>
               :
-                  <ItemDetail item = { item } />
+                  <ItemDetail 
+                      detail2 = {detail} 
+                  />
           }
       </>
   )
-};
+}
 
 export default ItemDetailContainer;
+

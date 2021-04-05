@@ -1,16 +1,19 @@
 import './App.css';
-import CounterApp from './components/CounterApp';
-import RouterApp from './routes/RouterApp.js';
+import React, { useState} from 'react';
+import CartContext from './Cart/CartContext';
+//import CartProvider from './cart/CartProvider';
+import RouterApp from './routes/RouterApp';
 
-function App() {
+const App = () => {
   
-  return <>
-
-         <RouterApp/>   
-        <CounterApp/>
-      
-        </>
+    const [cart, setCart] = useState([]);
+  
+  return (
+        <CartContext.Provider value={{cart, setCart}}>
+           <RouterApp/>   
+        </CartContext.Provider>
+        )
 }
 
-export default App;
+export default App
 

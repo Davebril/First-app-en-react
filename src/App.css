@@ -89,8 +89,8 @@ li a:hover:not(.active) {
 .Cart {
   width: 30px;
   height: 30px;
-  margin-left: 1190px;
-  margin-top: -38px;
+  margin-left: 1300px;
+  margin-top: -40px;
   display: flex;
   justify-content: right;
   align-items: right;
@@ -118,4 +118,30 @@ li a:hover:not(.active) {
     position: relative;
     height: 36px;
     text-align: center;
+}
+
+.ph {
+  background-color:blue;
+}
+
+.pastas {
+  margin-top: 20px;
+}
+
+.letra {
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: -110px;
+  font-style: oblique;
+}
+
+.productos {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.letra2 {
+  font-style: oblique;
 }

@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <div className="App">
       <ul>
-        <li><Link to='/'>PH de pastas</Link></li>
+        <li className="ph"><Link to='/'>PH de pastas</Link></li>
         <li><Link to='/category/Ravioles'>Ravioles</Link></li>
         <li><Link to='/category/Canelones'>Canelones</Link></li>
         <li><Link to='/category/Sorrentinos'>Sorrentinos</Link></li>

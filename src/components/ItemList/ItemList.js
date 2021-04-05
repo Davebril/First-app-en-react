@@ -1,13 +1,19 @@
+import React from 'react';
 import Item from '../Item/Item';
 
-const ItemList = ({ items }) => (
-    <>
+function ItemList ({ items }) {
+    
+      return (
+        <div className="card-columns">
+        {
+        items.lenght === 0 ? <p>Loading...</p>
+        :
+        items.map(item => <Item key={item.id} {...item}/>
+             )
+        }
+        </div>
+
+        ) 
+      };
       
-      <div className="card-columns">
-        {items.map((item, index) => (
-          <Item key={index} {...item} />
-        ))}
-      </div>
-    </>
-  );
   export default ItemList;
