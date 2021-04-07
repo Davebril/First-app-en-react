@@ -107,15 +107,30 @@ li a:hover:not(.active) {
 }
 
 .btn-primary {
-    width: 274px;
+    width: 156px;
     position: absolute;
-    margin-left: -233px;
-    margin-top: 85px;
+    margin-left: 48px;
+    margin-top: -7px;
 }
 
+.btn-danger {
+  margin-left: 203px;
+  margin-top: -43px;
+  position: absolute;
+}
+
+.btn-success {
+  
+  position: absolute;
+  margin-right: 30px;
+  margin-top: -44px;
+}
 .input {
-    margin-top: 49px;
-    position: relative;
+
+    width: 157px;
+    margin-left: 46px;
+    margin-top: -42px;
+    position: absolute;
     height: 36px;
     text-align: center;
 }
@@ -145,3 +160,4 @@ li a:hover:not(.active) {
 .letra2 {
   font-style: oblique;
 }
+

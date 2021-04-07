@@ -31,18 +31,19 @@ import CartContext from '../Cart/CartContext';
     return (
         <div className="card col-auto mx-auto text-center">
             <h3 className="mt-2">Stock: {stock}</h3>
-        <div className="d-flex">         
-            <button className="btn btn-success mt-5"onClick={ handleApp }>+1</button>
+        <div className="row d-flex mt-5 mb-5 ">         
+            <button className="btn btn-success"onClick={ handleApp }>+1</button>
             <form onSubmit={ e => onAdd(e, counter) }>    
                  <input className="input" value= {counter} type = 'number' onChange={handleInputChange}/>  
                  <button className="btn btn-primary mt-8" type='submit'> Agregar </button>      
             </form>    
+            <button className="btn btn-danger " onClick={ handleSubtract }>-1</button>
         </div>
-            <button className="btn btn-danger mt-5" onClick={ handleSubtract }>-1</button>
+           
             {
                 cart.length > 0 &&
                 <Link to='/cart'>
-                    <button className="btn btn-sucess mb-3">FINALIZAR COMPRA</button>
+                    <button className="btn btn-light mb-3">FINALIZAR COMPRA</button>
                 </Link>
             }
         </div>

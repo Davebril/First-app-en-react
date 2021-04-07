@@ -11,7 +11,7 @@ import CartContext from '../Cart/CartContext';
 
          const [stock, setStock] = useState (stck);
          const pastas = {id,tipo,descripcion,precio}
-
+            console.log(addItem)
          const onAdd = (e, q) => {
              e.preventDefault()
              if( q <= stock) {

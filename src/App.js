@@ -1,19 +1,18 @@
 import './App.css';
-import React, { useState} from 'react';
-import CartContext from './Cart/CartContext';
-//import CartProvider from './cart/CartProvider';
+import React from 'react';
+import CartProvider from './Cart/CartProvider';
 import RouterApp from './routes/RouterApp';
 
 const App = () => {
   
-    const [cart, setCart] = useState([]);
   
   return (
-        <CartContext.Provider value={{cart, setCart}}>
+        <CartProvider>
            <RouterApp/>   
-        </CartContext.Provider>
+        </CartProvider>
         )
 }
 
 export default App
+
 

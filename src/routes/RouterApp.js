@@ -23,10 +23,11 @@ const RouterApp = () => {
                 
                 <Switch>
                     
-                    <Route path="/category/:id">
+                    <Route path="/item/:id">
                         <ItemDetailContainer/>
                     </Route>
-                    <Route path="/item/:id">
+                    <Route path="/category/:id">
+                   
                         <ItemListContainer/>
                     </Route>
                     <Route path="/cart">
@@ -41,6 +42,7 @@ const RouterApp = () => {
             </div>
             
         </Router>
+        
     );
 };
 

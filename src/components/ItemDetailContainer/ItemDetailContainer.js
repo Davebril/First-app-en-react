@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
         }, 2000);
 
       }).then(res => { 
-        setDetail(res.filter( p => p.tipo === parseInt(id) )[0]) ;
+        setDetail(res.filter( p => p.id === parseInt(id) )[0]) ;
         setLoading(false);
     })
 

@@ -11,8 +11,8 @@ const ItemDetail = ({ detail2: detail}) => {
             </div>
             <div className="col-6 pt-5 pr-5 pb-6 pl-5">
                 <h3>{`${detail.id} ${detail.tipo}`}</h3>
-                <h4>{`$ ${detail.precio}`}</h4>
-                <p>{`${detail.descripcion}`}</p>
+                <h5>{`${detail.descripcion}`}</h5>
+                <p>{`$ ${detail.precio}`}</p>
                 <CounterApp
                     id={ detail.id }
                     tipo={ detail.tipo }
