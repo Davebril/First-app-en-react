@@ -43,7 +43,7 @@ import CartContext from '../Cart/CartContext';
             {
                 cart.length > 0 &&
                 <Link to='/cart'>
-                    <button className="btn btn-light mb-3">FINALIZAR COMPRA</button>
+                    <button className="btn btn-warning mb-3">FINALIZAR COMPRA</button>
                 </Link>
             }
         </div>
