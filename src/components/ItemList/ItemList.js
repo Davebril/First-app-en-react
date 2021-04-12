@@ -6,7 +6,7 @@ function ItemList ({ items }) {
       return (
         <div className="card-columns">
         {
-        items.lenght === 0 ? <p>Loading...</p>
+        items.length === 0 ? <p>Loading...</p>
         :
         items.map(item => <Item key={item.id} {...item}/>
              )

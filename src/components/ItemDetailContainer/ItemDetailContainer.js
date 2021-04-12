@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
-import {products} from '../products';
+import { getFirestore } from '../../firebase/firebase';
 
 const ItemDetailContainer = () => {
 
@@ -12,19 +12,22 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
 
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-         
-              resolve(products);            
-        }, 2000);
+    const db = getFirestore();
+    const collections =  db.collection("products");
 
-      }).then(res => { 
-        setDetail(res.filter( p => p.id === parseInt(id) )[0]) ;
-        setLoading(false);
-    })
-
-    }, [id]);
-    return (
+      collections.get()
+      .then( res => {
+        let arr = [];
+        res.docs.map(c => arr.push({ id: parseInt(c.id), ...c.data() }));
+        const [prod] = arr.filter( p => p.id === parseInt(id) );
+        setDetail(prod);  
+        setLoading(false);    
+        console.log(detail)  
+      })
+      .catch (console.log('Algo salio mal'))
+  },[id]);
+    
+   return (
       <>
           {
               loading ?
@@ -39,4 +42,3 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer;
-
