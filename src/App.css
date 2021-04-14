@@ -217,3 +217,14 @@ li a:hover:not(.active) {
   width: 800px;
   background-color: white;
 }
+
+.form {
+  justify-content: center;
+  background: white;
+  align-items: center;
+  display: block;
+}
+
+.input-grup-sm {
+  width: 400px;
+}

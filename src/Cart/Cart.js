@@ -35,6 +35,9 @@ const Cart = () => {
                     <div>
                         <button id="finalizar" className="btn btn-success">FINALIZAR COMPRA</button>
                     </div>
+                    <div>
+                        <Link to="/checkout"><button id="pagar" className="btn btn-success">IR A PAGAR</button></Link>
+                    </div>
                 </div>
         }
         </>
