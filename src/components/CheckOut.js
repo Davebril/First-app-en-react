@@ -52,10 +52,11 @@ const CheckOut = () => {
 return (
 
         <form className="form" onSubmit={handleSubmitOrder}>
-           <input className="input-group input-grup-sm" name="name" value ={buyer.name}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
-           <input className="input-group input-grup-sm" name="phone" value ={buyer.phone}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
-           <input className="input-group input-grup-sm" name="email" value ={buyer.email}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
-            <button type="submit" className="btn btn-info">Generar orden</button>          
+       
+           <input className="input-group input-grup-sm" name="name" placeholder="Ingrese su nombre" value ={buyer.name}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
+           <input className="input-group input-grup-sm" name="phone" placeholder="Ingrese su telefono" value ={buyer.phone}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
+           <input className="input-group input-grup-sm" name="email" placeholder="Ingrese su email" value ={buyer.email}onChange={handleInputChange} onSubmit={handleSubmitOrder}/>
+            <button id="orden"type="submit" className="btn btn-info">Generar orden</button>          
         </form>
        )
 }   

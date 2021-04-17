@@ -16,27 +16,26 @@ const Cart = () => {
         <>
         {
             cart.length === 0 ?
-                <h4 className="mt-2 bg-white">No hay productos en el carrito<Link to="/"><button>Volver</button>
+                <h4 className="mt-2">No hay productos en el carrito<Link to="/">
+                    <button className="btn btn-warning ml-2">Volver</button>
                 </Link></h4>
                 :
         
                 <div>
                     <div id="compra" className="card "><h3>MI CARRITO</h3>
                         {cart.map(x => (<p>{x.item.tipo}:
-                            {x.item.descripcion}, ${x.item.precio}<button className="eliminar"
+                            {x.item.descripcion}, ${x.item.precio}<button className="btn btn-danger"id="eliminar"
                                 onClick={() => removeItem(x.item.id)}>x</button></p>))
                         }
-                        <button onClick={() => clear()}>Eliminar todo</button>
+                       
 
                     </div>
+                    <button id="eliminarTodo"className="btn btn-danger"onClick={() => clear()}>Eliminar todo</button>
                     <div className="total">
                         TOTAL = {total}
-                    </div>
+                    </div>   
                     <div>
-                        <button id="finalizar" className="btn btn-success">FINALIZAR COMPRA</button>
-                    </div>
-                    <div>
-                        <Link to="/checkout"><button id="pagar" className="btn btn-success">IR A PAGAR</button></Link>
+                        <Link to="/checkout"><button id="finalizar" className="btn btn-success">IR A PAGAR</button></Link>
                     </div>
                 </div>
         }

@@ -24,13 +24,13 @@ import CartContext from '../Cart/CartContext';
         if (typeof e.target.value === 'number') {
             setCounter (e.target.value);
         } else {
-          
+           
         };
     };
 
     return (
-        <div className="card col-auto mx-auto text-center">
-            <h3 className="mt-2">Cantidad: {stock}</h3>
+        <div className="card col-auto mx-auto ">
+            <h4 className="mt-2 ml-5">Cantidad: {stock}</h4>
         <div className="row d-flex mt-5 mb-5 ">         
             <button className="btn btn-success"onClick={ handleApp }>+1</button>
             <form onSubmit={ e => onAdd(e, counter) }>    
@@ -43,7 +43,7 @@ import CartContext from '../Cart/CartContext';
             {
                 cart.length > 0 &&
                 <Link to='/cart'>
-                    <button className="btn btn-warning mb-3">FINALIZAR COMPRA</button>
+                    <button className="btn btn-warning ml-4 mb-1">FINALIZAR COMPRA</button>
                 </Link>
             }
         </div>

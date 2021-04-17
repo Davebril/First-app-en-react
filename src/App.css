@@ -87,23 +87,20 @@ li a:hover:not(.active) {
 }
 
 .Cart { 
-  
-  width: 30px;
+ 
   height: 30px;
-  margin-left: 1200px;
+  margin-left: 1100px;
   margin-top: -37px;
   display: flex;
   justify-content: right;
   align-items: right;
   cursor: pointer;
-  
-  
 }
 
 .redalert {
   width: 11px;
   height: 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   margin-top: -6px;
   margin-left: -3px;
   position: absolute;
@@ -111,7 +108,11 @@ li a:hover:not(.active) {
   background: red;
   display: flex;
   align-items: center;
+}
 
+.colortxt {
+  margin-left: 10px;
+  color:white;
 }
 
 .form {
@@ -156,18 +157,12 @@ li a:hover:not(.active) {
   background-color:blue;
 }
 
-.pastas {
-  margin-top: 20px;
-}
-
-.letra {
-  
-  color: yellow;
-  
-  
-  display: flex;
-  
-  font-style: oblique;
+.letra { 
+    font-style: oblique;
+    font-size: 80px;
+    display: flex;
+    color: black;
+    font-family: auto;
 }
 
 .productos {
@@ -179,11 +174,8 @@ li a:hover:not(.active) {
   font-style: oblique;
 }
 
-
 #root {
-  
-  background:url('https://res.cloudinary.com/diivxdasa/image/upload/v1618072905/imagenfondo_h5loxt.jpg');
- 
+  background:url('https://res.cloudinary.com/diivxdasa/image/upload/v1618592219/fondoOk_b28mxj.jpg');
 }
 
 #compra {
@@ -191,9 +183,13 @@ li a:hover:not(.active) {
 }
 
 #finalizar {
-  margin-left: 600px;
-  margin-top: 10px;
-  
+  margin-left: 630px;
+  margin-top: 60px;
+}
+
+#eliminarTodo {
+   margin-left: 623px;
+   margin-top: 33px;
 }
 
 .total {
@@ -201,30 +197,75 @@ li a:hover:not(.active) {
   background: white;
 }
 
-.eliminar {
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-    border-radius: 15px;
-}
-
-.colortxt {
-  color:white;
+#eliminar {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 1049px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -25px;
 }
 
 .linea {
   margin-left: 150px;
   width: 800px;
-  background-color: white;
+  background-color: black;
 }
 
 .form {
+  margin-left: 465px;
+  position: absolute;
   justify-content: center;
   background: white;
   align-items: center;
   display: block;
+  margin-top: 30px;
+}
+
+#orden {
+  width: 400px;
+  
 }
 
 .input-grup-sm {
   width: 400px;
+}
+
+.card-columns {
+  font-size: 12px;
+}
+
+#detailCounter {
+  margin-left: 100px;
+  width: 342px;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.letraItem {
+  font-family: oblique;
+  font-style: oblique;
+}
+
+.detailLetra {
+  margin-left: -75px;
+  width: 440px;
+  position: relative;
+  display: flex;
+}
+
+.card-img-top {
+  border-radius: 120px;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.w-75 {
+  border-radius: 150px;
 }

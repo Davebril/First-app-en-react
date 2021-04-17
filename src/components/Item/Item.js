@@ -8,7 +8,7 @@ import CounterApp from '../CounterApp';
          <div className="card" style={{width: '18rem'}}>
              <img src={ urlImg } className="card-img-top" alt={`${tipo} ${descripcion}`}/>
             <div className="card-body">
-                <h4>{`${tipo} ${descripcion}`}</h4> 
+                <h5 className="letraItem">{`${tipo} ${descripcion}`}</h5> 
                 <p className="card-text">{`$ ${precio}`}</p>
                 <Link to = {`/item/${ id }`} >Detalles</Link>
                 <CounterApp 

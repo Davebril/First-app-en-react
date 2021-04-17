@@ -5,13 +5,13 @@ const ItemDetail = ({ detail2: detail}) => {
   
     return (
         
-        <div className="pastas">
+        <div className="mt-4">
             <div className="col-6 pt-5 pr-5 pb-6 pl-5">
-            <img src={detail.urlImg}  alt={`${detail.id} ${detail.tipo}`} className="w-100"/>
+            <img className="imgdetail" src={detail.urlImg}  alt={`${detail.id} ${detail.tipo}`} className="w-75"/>
             </div>
-            <div className="col-6 pt-5 pr-5 pb-6 pl-5">
-                <h3>{`${detail.id} ${detail.tipo}`}</h3>
-                <h5>{`${detail.descripcion}`}</h5>
+            <div id="detailCounter"className="col-6 pt-5 pr-5 pb-6 pl-5">
+                <h3 className="detailLetra">{`${detail.id} ${detail.tipo}`}</h3>
+                <h5 className="detailLetra">{`${detail.descripcion}`}</h5>
                 <p>{`$ ${detail.precio}`}</p>
                 <CounterApp
                     id={ detail.id }
@@ -19,10 +19,7 @@ const ItemDetail = ({ detail2: detail}) => {
                     precio={ detail.precio }
                     stock={ detail.stock } 
                 />
-                
-            </div>
-
-            
+            </div> 
         </div>
                 
     )

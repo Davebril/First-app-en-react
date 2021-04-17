@@ -17,7 +17,7 @@ function CartWidget() {
         cantidad!==0  &&
         <div className= "Cart"><div className="redalert">1</div>
             <button><FontAwesomeIcon icon={faShoppingCart}/></button>
-            <p className="colortxt">Sus selecciones de comida = {cantidad}</p>
+            <div><p className="colortxt">Su seleccion de comida = {cantidad}</p></div>
         </div> 
             );
         }

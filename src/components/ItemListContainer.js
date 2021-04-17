@@ -28,8 +28,8 @@ const ItemListContainer = () => {
       
     return (
         
-        <div className="productos">
-        <h1 className="letra">Nuestras Pastas</h1><hr className="linea"></hr>
+        <div className="productos jumbotron-fluid">
+        <h1 className="letra display-4">Nuestras Pastas</h1><hr className="linea"></hr>
         <ItemList 
           items={items}
                   />
