@@ -7,11 +7,10 @@ function NavBar() {
     <div className="App">
       <ul>
         <li className="ph"><Link to='/'>PH de pastas</Link></li>
-        <li><Link to='/category/Ravioles'>Ravioles</Link></li>
-        <li><Link to='/category/Canelones'>Canelones</Link></li>
-        <li><Link to='/category/Sorrentinos'>Sorrentinos</Link></li>
-        
-        
+        <li className="nav"><Link to='/category/Ravioles'>Ravioles</Link></li>
+        <li ><Link to='/category/Canelones'>Canelones</Link></li>
+        <li ><Link to='/category/Sorrentinos'>Sorrentinos</Link></li>
+        <li ><Link to='/category/Fideos'>Fideos</Link></li>  
       </ul>
       <CartWidget/>
     </div>

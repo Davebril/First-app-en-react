@@ -46,5 +46,29 @@ export const products = [
         precio: 500,
         stock: 5,
         urlImg: 'https://res.cloudinary.com/diivxdasa/image/upload/c_scale,h_190,w_286/v1617237291/sorrentinos-scarpa_brbhrt.jpg',      
+    },
+    {
+        id: 7,
+        tipo: 'Fideos',
+        descripcion: 'Al pesto de albahaca, una opción distinta para los exigentes',
+        precio: 350,
+        stock: 7,
+        urlImg: 'https://res.cloudinary.com/diivxdasa/image/upload/c_scale,h_190,w_286/v1618858190/fideos_al_pesto_de_albahaca_gubl1t.jpg',      
+    },
+    {
+        id: 8,
+        tipo: 'Fideos',
+        descripcion: 'deliciosos fideos acompañados de una exquisita salsa carbonara',
+        precio: 300,
+        stock: 11,
+        urlImg: 'https://res.cloudinary.com/diivxdasa/image/upload/c_scale,w_286/v1618858199/espaguetis-carbonara1_orsgyc.jpg',      
+    },
+    {
+        id: 9,
+        tipo: 'Fideos',
+        descripcion: 'Hechos con huevo y queso, con una suave pero rica salsa rosa',
+        precio: 400,
+        stock: 9,
+        urlImg: 'https://res.cloudinary.com/diivxdasa/image/upload/c_scale,h_190,w_286/v1618858179/fideossalsarosa_auxge3.jpg',      
     }
 ]

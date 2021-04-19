@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Para comenzar: Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto usa bootstrap: [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts disponibles
 
-In the project directory, you can run:
+En el directorio del proyecto, para hacer correr la app:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Corre la app en modo desarrollador .\
+Abre [http://localhost:3000](http://localhost:3000) para que se visibilice en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+La página recargará si haces cambios.
 
-### `npm test`
+### src
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aquí encontrarás el funcionamiento de la App, dentro de ella verás a la carpeta madre components,
+dentro de ella están todos los archivos, algunos de ellos dentro de otra carpeta.
+Solo las carpetas "Cart, firebase y routes" están por fuera de components.
 
-### `npm run build`
+### Navbar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Un simple menú donde puedes filtrar el tipo de comida que prefieras.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### RouterApp
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este archivo se encarga de redireccionar la app entre sus componentes.
 
-### `npm run eject`
+### ItemList
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Podrás visualizar toda la lista de comidas y podrás seleccionar y agregar según el stock
+disponible lo que quieras agregar al carrito.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### CartWidget
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Solo se mostrará, (con el total de tu selección) una vez que hayas seleccionado las comidas 
+con el botón "Agregar".
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Cart
 
-## Learn More
+Aquí tendrás el detalle de tu selección de comidas y podrás eliminar alguna selección que no
+quieras hacer o mismo, podrás seguir el procedimiento con el botón "ir a pagar".
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### CheckOut
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este es el último paso, aquí completarás tus datos personales y luego, al clickear "generar orden",
+tu información se enviará a la base de datos de firebase.
 
-### Code Splitting
+### firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+En este archivo, se encuentran los productos disponibles y las ordenes que se van cargando a medida
+que los usuarios van generando sus compras.
+De igual manera, estos datos son exclusivos del propietario de la app.
 
-### Analyzing the Bundle Size
+### App.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Aquí verás todos los estilos de la app.
 
-### Making a Progressive Web App
+### Cloudinary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Las imagenes se encuentran en cloudinary. [https://cloudinary.com/]
 
-### Advanced Configuration
+## Aprende más
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Puedes aprender mas aquí -> [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Deployment
+Para aprender React, chequea -> [React documentation](https://reactjs.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

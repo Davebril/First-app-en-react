@@ -154,7 +154,14 @@ li a:hover:not(.active) {
 }
 
 .ph {
+  position: absolute;
   background-color:blue;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  margin-left: 230px;
 }
 
 .letra { 
@@ -179,6 +186,8 @@ li a:hover:not(.active) {
 }
 
 #compra {
+  margin-top: 5px;
+  font-family: fantasy;
   text-align: center;
 }
 
@@ -195,13 +204,14 @@ li a:hover:not(.active) {
 .total {
   text-align: center;
   background: white;
+  font-family: fantasy;
 }
 
 #eliminar {
   position: absolute;
   width: 30px;
   height: 30px;
-  margin-left: 1049px;
+  margin-left: 1056px;
   border-radius: 15px;
   align-items: center;
   justify-content: center;
