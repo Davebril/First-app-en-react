@@ -61,6 +61,11 @@ Aquí verás todos los estilos de la app.
 
 Las imagenes se encuentran en cloudinary. [https://cloudinary.com/]
 
+### GIF
+
+Gif de la app y sus funciones.
+[https://res.cloudinary.com/diivxdasa/video/upload/v1618861185/React_App_-_Google_Chrome_2021-04-19_16-33-55_wqyfmn.mp4]
+
 ## Aprende más
 
 Puedes aprender mas aquí -> [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
