@@ -18,7 +18,7 @@ export const products = [
     {
         id: 3,
         tipo: 'Sorrentinos',
-        descripcion: 'caseros y sabrosos sorrentinos con champignones acompañados con salsa de curry',
+        descripcion: 'caseros y sabrosos con champignones acompañados con salsa de curry',
         precio: 500,
         stock: 12,
         urlImg: 'https://res.cloudinary.com/diivxdasa/image/upload/v1617049813/sorrentinos_bfkwmh.jpg',

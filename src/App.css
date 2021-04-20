@@ -161,7 +161,7 @@ li a:hover:not(.active) {
 .nav {
   position: relative;
   display: flex;
-  margin-left: 230px;
+  margin-left: 500px;
 }
 
 .letra { 
